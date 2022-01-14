@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <i class="fa fa-bars icon" aria-hidden="true"></i>
+            <a href="./pages/sinhnhat.html" class="contact" align="center">Sinh nhật</a>
+        </header>
+        <div class="title">
+            <p>Sắp sang tuổi mới rồi chỉ còn...</p>
+        </div>
+        <div id="countdown">
+            <div class="countdown-item">
+                <div class="number">01</div>
+                <div><span>NGÀY</span></div>
+            </div>
+            <div class="countdown-item">
+                <div class="number">01</div>
+                <div><span>GIỜ</span></div>
+            </div>
+            <div class="countdown-item">
+                <div class="number">01</div>
+                <div><span>PHÚT</span></div>
+            </div>
+            <div class="countdown-item">
+                <div class="number">01</div>
+                <div><span>GIÂY</span></div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function countdown() {
+            var future = Date.parse('15 Jan 2022 00:00:00');
+            var now = new Date();
+            var diff = future - now;
+
+            var days = Math.floor(diff / (24 * 60 * 60 * 1000));
+            var hours = Math.floor(diff / (60 * 60 * 1000));
+            var minutes = Math.floor(diff / (60 * 1000));
+            var seconds = Math.floor(diff / (1000))
+
+            var d = days;
+            var h = hours % 24;
+            var m = minutes % 60;
+            var s = seconds % 60;
+
+            document.getElementsByClassName('number')[0].innerHTML = d;
+            document.getElementsByClassName('number')[1].innerHTML = h;
+            document.getElementsByClassName('number')[2].innerHTML = m;
+            document.getElementsByClassName('number')[3].innerHTML = s;
+        }
+        setInterval(function() {
+            countdown()
+        }, 1000)
+    </script>
+</body>
+
+</html>

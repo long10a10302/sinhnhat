@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFCF2;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+}
+
+header i {
+    padding-right: 30px;
+    color: red;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header .contact {
+    background-color: #d8303b;
+    height: 28px;
+    width: 80px;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 20px;
+}
+
+header .share {
+    background-color: royalblue;
+    height: 28px;
+    width: 100px;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 20px;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 20px;
+    font-size: 40px;
+    font-style: italic;
+}
+
+#countdown {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.countdown-item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 25%;
+}
+
+.countdown-item .number {
+    color: black;
+    background-color: rgb(255, 221, 156);
+    height: 100px;
+    width: 150px;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    text-align: center;
+    line-height: 100px;
+}
+
+#countdown div span {
+    display: block;
+    background-color: rgb(255, 202, 56);
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    height: 60px;
+    line-height: 60px;
+}
